@@ -8,14 +8,20 @@ body {
 header {
 	border-bottom: 1px solid black;
 	overflow:hidden;
+	position: relative;
 	color: rgb(119,119,119);
 
 	.icons {
 		float:right;
+		color: rgb(59,140,197);
+		font-size:4em;
+		margin-right:0.4em;
 	}
 
 	button {
 		float:right;
+		right:0;
+		clear:both;
 		font-size:1em;
 		color: rgb(119,119,119);
 		font-weight:600;
@@ -160,6 +166,11 @@ header {
 	border-bottom:1px solid black;
 	line-height:1.6;
 
+
+	#twitter{
+		font-size:5em;
+	}
+
 	a {
 		text-decoration: none;
 	}
@@ -174,7 +185,7 @@ header {
 		padding:0 2em;
 		background-color: rgb(30,30,30);
 		color: rgb(219,219,219);
-		
+		text-align: center;
 
 		div {
 			border-left:2px solid rgb(152,152,152);
@@ -184,6 +195,7 @@ header {
 				line-height:1.7em;
 				font-size:1em;
 				font-weight:100;
+				text-align: left;
 			}
 		}
 	}
