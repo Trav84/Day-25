@@ -60,9 +60,51 @@ header {
 	}
 }
 
+.photo-carasol {
+
+	display:none;
+	color: white;
+	font-weight:100;
+	position:relative;
+	letter-spacing: 0.2em;
+
+	.text-over-photo {
+		margin-left:4px;
+		position: relative;
+		top:-230px;
+	}
+
+	.black-text-box {
+		background-color: rgba(0,0,0,0.6);
+		width:25%;
+	}
+
+	.blue-text-box {
+		background-color: rgba(59,140,197,0.6);
+		width:40%;
+	}
+
+	.black-text {
+		// position: relative;
+		// top:-200px;
+		// margin: 0 4px;
+
+		.bold {
+			font-weight:800;
+		}
+	}
+
+	.blue-text {
+		// position: relative;
+		// top:-200px;
+		// margin: 0 4px;
+	}
+}
+
 .main {
 	text-align: center;
 	margin-top:1em;
+	margin: 0 1em;
 
 	h1 {
 		font-size:2.4em;
@@ -107,11 +149,13 @@ header {
 
 .recent-work {
 	text-align: center;
+	margin: 0 1em;
 
 	h1 {
 		font-size:2em;
 		font-weight:700;
 		color:rgb(53,53,53);
+		margin:0 1em;
 	}
 
 	h2 {
@@ -231,15 +275,138 @@ header {
 	h3 {
 		margin-top:2em;
 	}
+
+	#2nd-news-pic {
+		background-image: url('../images/t4.jpg');
+	}
+
+	.news-box {
+		background-image: url("../images/t5.jpg");
+		background-position: left center;
+		background-repeat: no-repeat;
+		background-size: contain;
+		margin-bottom:1em;
+		border-top-left-radius:5px;
+		border-bottom-left-radius:5px;
+		overflow:hidden;
+		position: relative;
+
+		h1, h2 {
+			position:relative;
+			left: 10em;
+			width:100%;
+		}
+
+		h1 {
+			color: rgb(59,140,197);
+			font-weight:100;
+			margin-bottom: 0;
+		}
+
+		h2 {
+			padding-bottom:2em;
+		}
+	}
+
+	.date-box {
+		float:right;
+		background-color:black;
+		border-left: 1px solid rgb(59,140,197);
+		display:inline-block;
+	}
+
+	.flickr-box {
+
+		img {
+			border-radius: 5px;
+			height:5em;
+			width:5em;
+		}
+	}
+
+	a {
+		text-decoration: none;
+		color: rgb(59,140,197);
+	}
+
+	h3 {
+		margin-left:0;
+		font-weight:100;
+	}
+
+	
 }
 
 footer {
 	border-top:1px solid black;
 	background-color:rgb(16,16,16);
 	color:rgb(219,219,219);
+	font-weight:100;
+
+	h1 {
+		margin-top: 1em;
+		margin-left:1em;
+	}
 
 	h2 {
 		text-align: right;
+		margin-right:1em;
+		margin-bottom:1em;
+	}
+
+}
+
+/* CSS for medium devices ≥768px */
+@media (min-width: 768px) {
+
+	.photo-carasol {
+		display:block;
+	}
+}
+
+	/* CSS for medium devices 992px */
+@media (min-width: 992px) {
+
+	.main {
+
+		button {
+			display:block;
+			margin: 0 auto;
+			margin-top:1em;
+		}
+
+		.description-box {
+			display: inline-block;
+			width:33%;
+		}
+
+		.description-box:last-child {
+
+		}
+	}
+
+	.recent-work {
+
+		.project-box {
+			box-sizing: border-box;
+			width:33%;
+			display:inline-block;
+		}
+	}
+
+	.clients {
+
+		div {
+			display:inline-block;
+		}
+	}
+	
+	.about-us {
+
+		.about {
+			display:inline-block;
+			width:30%;
+		}
 	}
 
 }

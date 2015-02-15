@@ -16,6 +16,7 @@
 
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/flexslider.css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <!-- endbuild -->
@@ -47,6 +48,35 @@
             <i class="fa fa-bars"></i> Menu
         </button>
     </header>
+
+    <section class="photo-carasol">
+    <div class="flexslider">
+        <ul class="slides">
+            <li>
+                <img src="images/1.jpg" />
+            </li>
+            <li>
+                <img src="images/2.jpg" />
+            </li>
+            <li>
+                <img src="images/3.jpg" />
+            </li>
+        </ul>
+    </div>
+
+    <div class="text-over-photo">
+        <div class="black-text-box">
+            <span class="black-text">
+                makes <span class="bold"> real use </span> of the power of <span class="bold"> {LESS} </span>syntax! 
+            </span>
+        </div>
+        <div class="blue-text-box">
+            <span class="blue-text">
+                Restart was built with heavy use of {less} technology, making the life of the web developer easier!
+            </span>
+        </div>
+    </div>
+    </section>
 
     <section class="main">
         <h1> focus on what's important </h1>
@@ -128,51 +158,70 @@
     </section>
 
     <section class="about-us">
-        <h1> ABOUT US </h1>
-        <h2> Fugiat dapibus, tellus ac cursus commodo, mauesris condime ntum nibh, ut fermentum mas justo sitters. </h2>
-        <h2> <i class="fa fa-anchor"></i> 3 Athens street </h2>
-        <h2> <i class="fa fa-phone"></i> (+30) 265-9987 </h2>
-        <h2> <i class="fa fa-print"></i> (+30) 9854-7885 </h2>
-        <h2> <i class="fa fa-envelope-o"></i> hello@restarttheme.com </h2>
-        <h3> LATEST NEWS </h3>
-        <div class="news-box">
-            News Box 1
-        </div>
-        <div class="news-box">
-            News Box 2
-        </div>
-        <h1> FLICKRFEED </h1>
-        <div class="flickr-box">
-            FLICKR 1
-        </div>
-        <div class="flickr-box">
-            FLICKR 2
-        </div>
-        <div class="flickr-box">
-            FLICKR 3
-        </div>
-        <div class="flickr-box">
-            FLICKR 4
-        </div>
-        <div class="flickr-box">
-            FLICKR 5
-        </div>
-        <div class="flickr-box">
-            FLICKR 6
-        </div>
-        <div class="flickr-box">
-            FLICKR 7
-        </div>
-        <div class="flickr-box">
-            FLICKR 8
-        </div>
-        <div class="flickr-box">
-            FLICKR 9
-        </div>
-        <div class="flickr-box">
-            FLICKR 10
-        </div>
-        <h2>  ALl Photos © by <a href="#"> Dimitra Giannouka </a> </h2>
+        <section class="about">
+            <h1> ABOUT US </h1>
+            <h2> Fugiat dapibus, tellus ac cursus commodo, mauesris condime ntum nibh, ut fermentum mas justo sitters. </h2>
+            <h2> <i class="fa fa-anchor"></i> 3 Athens street </h2>
+            <h2> <i class="fa fa-phone"></i> (+30) 265-9987 </h2>
+            <h2> <i class="fa fa-print"></i> (+30) 9854-7885 </h2>
+            <h2> <i class="fa fa-envelope-o"></i> hello@restarttheme.com </h2>
+        </section>
+
+        <section class="about">
+            <h3> LATEST NEWS </h3>
+            <div class="news-box">
+                <h1> MEDIA HEADING, THIS IS A TITLE OF A NEWS... </h1>
+                <h2> Fugiat dapibus, tellus ac cursus commodo, ut fermentum... </h2>
+                <div class="date-box">
+                    19 FEB
+                </div>
+            </div>
+
+            <div class="news-box" id="2nd-news-pic">
+                <h1> MEDIA HEADING, OF A NEWS ITEM. </h1>
+                <h2> Fugiat dapibus, tellus ac cursus commodo, condime ntum nibh, ut fermentum... </h2>
+                <div class="date-box">
+                    19 FEB
+                </div>
+            </div>
+        </section>
+
+        <section class="about">
+
+            <h1> FLICKRFEED </h1>
+            <div class="flickr-box">
+                <img src="images/14447134571_7093b38f5f_m.jpg">
+            </div>
+            <div class="flickr-box">
+                <img src="images/13079650324_727f7520d2_m.jpg">
+            </div>
+            <div class="flickr-box">
+                <img src="images/11131031035_9718218679_m.jpg">
+            </div>
+            <div class="flickr-box">
+                <img src="images/11130835094_00d66ba4f8_m.jpg">
+            </div>
+            <div class="flickr-box">
+                <img src="images/8044791649_7a380b5056_m.jpg">
+            </div>
+            <div class="flickr-box">
+                <img src="images/8007572306_bc5432986f_m.jpg">
+            </div>
+            <div class="flickr-box">
+                <img src="images/7976637429_1e6aab1993_m.jpg">
+            </div>
+            <div class="flickr-box">
+                <img src="images/7970391466_818e92974c_m.jpg">
+            </div>
+            <div class="flickr-box">
+                <img src="images/7868584488_415fbc9ed8_m.jpg">
+            </div>
+            <div class="flickr-box">
+                <img src="images/7868579574_91dbb6e6b6_m.jpg">
+            </div>
+
+            <h3>  All Photos © by <a href="#"> Dimitra Giannouka </a> </h3>
+        </section>
 
     </section>
 
@@ -187,6 +236,7 @@
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/jquery.flexslider-min.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 

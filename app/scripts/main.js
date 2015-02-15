@@ -1,2 +1,6 @@
 /* jshint devel:true */
-console.log('\'Allo \'Allo!');
+$(window).load(function() {
+  $('.flexslider').flexslider({
+    animation: "slide"
+  });
+});
