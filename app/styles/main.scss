@@ -276,8 +276,11 @@ header {
 		margin-top:2em;
 	}
 
-	#2nd-news-pic {
+	#second-news {
 		background-image: url('../images/t4.jpg');
+		background-position: left center;
+		background-repeat: no-repeat;
+		background-size: contain;
 	}
 
 	.news-box {
@@ -293,7 +296,7 @@ header {
 
 		h1, h2 {
 			position:relative;
-			left: 10em;
+			left: 7em;
 			width:100%;
 		}
 
@@ -306,13 +309,18 @@ header {
 		h2 {
 			padding-bottom:2em;
 		}
+
 	}
 
 	.date-box {
-		float:right;
+		position: absolute;
+		right: 0;
+		top: 0;
+		bottom: 0;
 		background-color:black;
 		border-left: 1px solid rgb(59,140,197);
 		display:inline-block;
+		padding:2em 0.4em;
 	}
 
 	.flickr-box {
@@ -405,7 +413,16 @@ footer {
 
 		.about {
 			display:inline-block;
-			width:30%;
+			width:33%;
+			vertical-align: top;
+
+			h3 {
+				margin-top:0;
+			}
+
+			h1 {
+				margin-left:0;
+			}
 		}
 	}
 
